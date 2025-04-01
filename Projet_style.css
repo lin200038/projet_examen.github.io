@@ -1,101 +1,107 @@
 header{
     height: 100px;
     border: 1px black solid;
-    background-color: antiquewhite;
+    background-color:#ec4899/*AliceBlue */
+    
 }
 
 
 nav{
-    display: flex;
-    justify-content: space-between;
-    background-color: black;
-    color: white;
-    border: 2px rgb(red, green, blue);
-    padding: 10px 20px;
-
-}
-a{  
-    margin:0 20px;
-    all:unset;
-
-}
-a:hover{
-    color: yellowgreen;
+   height: 50px;
 }
 
-#container{
+
+#body-container{
     display: flex;
     justify-content: center;
-    background-image: url("../Projet/IMG_20230914_145130.jpg");
-    background-size: 100% 100%;
+    background-color: aliceblue;
     
 }
 
 .my_class{
-    width: 800px;
+    width: 80vw;
 }
 
-body{
-    all: unset;
-    margin: auto;
-    background-image:url('./Projet/IMG_20230908_174423.jpg');
-}
-
-
-.contraine_main{
-    display: flex;
-    flex-direction: column;
-   border: 1px black solid;
-   max-width:600px !important;
-   background-color: beige;
-}
-
-@media screen and ( max-width: 800px){ /*对于小于于800px宽度的内容修改*/
-    #baobao{
-        flex-direction: column-reverse;
-    }
-}
-
-#baobao{
-    background-color:red;
+#main-container{
     display: flex;
     flex-direction: row;
-    gap: 10px;
     height: 100vh;
 }
 
-.carry_contraine{
-    display: flex;
-    gap: 10px 20px;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: flex-start;
+.container_main{
+display: flex;
+flex-direction: column;
+border: 1px black solid;
+background-color:silver;
+width: 75%;
+background-image: url(../Temp/【哲风壁纸】迷宫饭-饭.png);
+background-size: 100% 100%;
+}
 
+/* @media screen and ( max-width: 800px){ /* Ce media Screen permet définir les fils <800px vont changé de la flex sens */
+  /*   #baobao{
+        flex-direction: column-reverse;
+    } */
+
+
+
+.carry_contraine{
+    margin-left: 3%;
+    }
+
+.carry_contraine a{ 
+        all: unset;
+        color:red;
+}
+
+.carry_contraine a:hover{
+    color: green;
 }
 
 .aside{
     border: 1px black solid;
-    background-color: yellowgreen;
-    width: 200px;;
+    background-color:yellowgreen;
+    width: 25%;
 }
 
 
 .carre{
-    display: flex;
+   display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
-    width: 80px;
-    height:80px;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+}
+
+.supplement{
+    padding-left: 2%;
+    height: 65vh;
     border: 1px black solid;
-
 }
-
+.contrat{
+    
+}
 .carre img{
-    width: 45px;
-    height: 45px;
+    width: 100px;
+    height: 100px;
+    border:1px black solid;
+}
+ .sous-titre{
+    text-align: center;
+ }
+
+.aside input{
+    width: 100%;
 }
 
-.sous-titre{
-    margin:5px 0 0;
+#video{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+#Social_medial{
+    
 }
