@@ -1,5 +1,5 @@
 header{
-    height: 100px;
+    height: auto;
     border: 1px black solid;
     background-color:#ec4899/*AliceBlue */
     
@@ -15,17 +15,21 @@ nav{
     display: flex;
     justify-content: center;
     background-color: aliceblue;
-    
-}
+    flex-direction: column; 
+    }
 
 .my_class{
-    width: 80vw;
+    margin:0 auto;
+    width: 95vw;
+    height: auto;
 }
 
 #main-container{
     display: flex;
     flex-direction: row;
-    height: 100vh;
+    flex-wrap: nowrap;
+    height: auto;   
+    max-height: 100vh;
 }
 
 .container_main{
@@ -36,17 +40,39 @@ background-color:silver;
 width: 75%;
 background-image: url(../Temp/【哲风壁纸】迷宫饭-饭.png);
 background-size: 100% 100%;
-}
+height: auto;
+max-height: 100vh;
+overflow: auto;
+box-sizing: border-box;
+}  /*box-sizing: border-box;Quand on définit la largeur et la hauteur d’un élément, 
+    ce sont ses dimensions finales : le padding et la border ne les augmentent pas.*/
 
 /* @media screen and ( max-width: 800px){ /* Ce media Screen permet définir les fils <800px vont changé de la flex sens */
   /*   #baobao{
         flex-direction: column-reverse;
     } */
 
-
+ @media (max-width: 480px) {
+        .aside {
+          width: 100%;
+        }
+        .carre {
+          width: 45%;
+        }
+        .form-line {
+            flex-direction: column;
+            align-items: flex-start;
+          }
+        
+          .form-line label,
+          .form-line input {
+            width: 100%;
+          }
+      }
 
 .carry_contraine{
     margin-left: 3%;
+
     }
 
 .carry_contraine a{ 
@@ -62,6 +88,7 @@ background-size: 100% 100%;
     border: 1px black solid;
     background-color:yellowgreen;
     width: 25%;
+    box-sizing: border-box;
 }
 
 
@@ -71,23 +98,33 @@ background-size: 100% 100%;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    width: 150px;
+    width: 80vw;
     height: 150px;
 }
 
+.carre img{
+    width: 80px;
+    height: 80px;
+    border:1px black solid;
+    object-fit: contain;
+    display: block;
+    margin: auto;
+}
+
+.carre:hover{
+    background-color: #ec4899;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+
 .supplement{
     padding-left: 2%;
-    height: 65vh;
+    height: auto;
     border: 1px black solid;
 }
-.contrat{
-    
-}
-.carre img{
-    width: 100px;
-    height: 100px;
-    border:1px black solid;
-}
+
+
  .sous-titre{
     text-align: center;
  }
@@ -103,5 +140,67 @@ background-size: 100% 100%;
 }
 
 #Social_medial{
-    
+    display: flex;
+    flex-direction: row;
 }
+
+
+#table_contract{
+    gap: 5px 5px;
+    margin-left: 5%;
+}
+
+.section-title {
+    margin-bottom: 15px;
+    font-size: 1.5em;
+    color: gold;
+    align-items: flex-start;
+  }
+  
+  .Add:hover{
+    color:red
+  }
+
+  .contrat{
+    display: flex;
+    max-width: 100% !important;
+    flex-wrap: wrap;
+    overflow: auto;
+    gap: 15px;
+    margin: 0px 10px 0px 10px;
+    height: auto;
+  }
+
+  #msg{
+    height: 150px;
+  
+  }
+
+  #sent_msg{
+    align-items: flex-end;
+  }
+
+  .footer{
+    text-align: center;
+    background-color:transparent;
+  }
+
+  aside input{
+    display: inline-block;
+    margin: 5px;
+  }
+
+  .form-line {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .form-line label {
+    min-width: 80px;
+  }
+
+  #msg{
+    height: auto;
+  }
+  
