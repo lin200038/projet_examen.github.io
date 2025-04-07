@@ -72,65 +72,66 @@
               </div>
             </main>
           </div>
-        
-        <aside class="aside">
-          <div class="supplement">
-            <h2 style="text-align: center;">Your Favorite site</h2>
+        <div class="aside">
+          <aside>
+            <div class="supplement">
+              <h2 style="text-align: center;">Your Favorite site</h2>
 
-            <div class="form-line">
-              <label for="siteName">Site name:</label>
-              <input type="text" placeholder="Name of your website" id="siteName">
-            </div>
+              <div class="form-line">
+                <label for="siteName">Site name:</label>
+                <input type="text" placeholder="Name of your website" id="siteName">
+              </div>
             
-            <div class="form-line">
-              <label for="siteUrl">Website:</label>
-              <input type="text" placeholder="https://www.google.com/" id="siteUrl">
-            </div>
+              <div class="form-line">
+                <label for="siteUrl">Website:</label>
+                <input type="text" placeholder="https://www.google.com/" id="siteUrl">
+              </div>
             
-            <div class="form-line">
-              <label for="siteLogo">Logo:</label>
-              <input type="text" placeholder="You can insert an image to the website." id="siteLogo">
-            </div>
+              <div class="form-line">
+                <label for="siteLogo">Logo:</label>
+                <input type="text" placeholder="You can insert an image to the website." id="siteLogo">
+              </div>
             
+              <br>
+            <select name="type" id="site_type" style="width:80%;">
+              <option>video</option>
+              <option>Social_medial</option>
+            </select>
             <br>
-          <select name="type" id="site_type" style="width:80%;">
-            <option>video</option>
-            <option>Social_medial</option>
-          </select>
-          <br>
-          <button onclick="AddSite()" style="margin-top: 2%;" class="Add">Add</button>
-        </div>
-
-        <div class="contrat">
-          <h3 style="text-align: center;">Contracter nous</h3>
-          <table id="table_contract">
-            <tr>
-              <td><span style="font-weight: bold; font-style: italic;">Email:</span></td>
-              <td><span>Exemple123@gmail.com</span></td>
-            </tr>
-            <tr>
-              <td><span style="font-weight: bold; font-style: italic;">Téléphone:</span></td>
-              <td><span style="margin-left: 2px;">00352 666777888</span></td>
-            </tr>
-          </table>
-          <div >
-          <label for="msg" style="font-weight: bold;">Commentaire:</label>
-          <textarea id="msg" rows="3" cols="30" placeholder="Please leave a message"></textarea>
+            <button onclick="AddSite()" style="margin-top: 2%;" class="Add">Add</button>
           </div>
-          <button id="sent_msg">
-            <span style="font-weight: bold;">Sent</span>
-          </button>
+
+          <div class="contrat">
+            <h3 style="text-align: center;">Contracter nous</h3>
+            <table id="table_contract">
+              <tr>
+                <td><span style="font-weight: bold; font-style: italic;">Email:</span></td>
+                <td><span>Exemple123@gmail.com</span></td>
+              </tr>
+              <tr>
+                <td><span style="font-weight: bold; font-style: italic;">Téléphone:</span></td>
+                <td><span style="margin-left: 2px;">00352 666777888</span></td>
+              </tr>
+            </table>
+            <div >
+            <label for="msg" style="font-weight: bold;">Commentaire:</label>
+            <textarea id="msg" rows="3" cols="30" placeholder="Please leave a message"></textarea>
+            </div>
+            <button id="sent_msg">
+              <span style="font-weight: bold;">Sent</span>
+            </button>
+          </div>
+          </aside>
         </div>
-        </aside>
       </div>
-      <footer class="footer">
+      <footer class="footer text-light ">
         <p>@Lin8 2025</p>
       </footer>
     </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
   </script>
-
 </body>
 </html>
 

@@ -41,8 +41,7 @@ width: 75%;
 background-image: url(../Temp/【哲风壁纸】迷宫饭-饭.png);
 background-size: 100% 100%;
 height: auto;
-max-height: 100vh;
-overflow: auto;
+overflow: none;
 box-sizing: border-box;
 }  /*box-sizing: border-box;Quand on définit la largeur et la hauteur d’un élément, 
     ce sont ses dimensions finales : le padding et la border ne les augmentent pas.*/
@@ -53,9 +52,6 @@ box-sizing: border-box;
     } */
 
  @media (max-width: 480px) {
-        .aside {
-          width: 100%;
-        }
         .carre {
           width: 45%;
         }
@@ -68,7 +64,19 @@ box-sizing: border-box;
           .form-line input {
             width: 100%;
           }
+          #main-container{
+            flex-direction: column;
+          }
+          .container_main{
+            width: 95vw;
+          }
+          .aside{
+            width: 95vw;
+            width: 100%  !important;
+          }
       }
+   
+
 
 .carry_contraine{
     margin-left: 3%;
@@ -171,29 +179,29 @@ box-sizing: border-box;
     height: auto;
   }
 
-  #msg{
-    height: 150px;
-  
-  }
-
   #sent_msg{
     align-items: flex-end;
   }
 
   .footer{
+    position: fixed;
     text-align: center;
     background-color:transparent;
+    padding: 20px;
+    width: 100%;
+    bottom: 0;
+    height: 10px;
   }
 
   aside input{
     display: inline-block;
-    margin: 5px;
+    margin-right: 5px;
   }
 
   .form-line {
     display: flex;
-    gap: 10px;
-    margin-bottom: 10px;
+    gap: 5px;
+    margin-bottom: 8px;
   }
   
   .form-line label {
